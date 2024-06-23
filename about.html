@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            text-align: center;
+        }
+
+        :root {
+            --cool-blue: #081f62;
+            --cool-gray: #fefefe;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--cool-blue);
+            background-color: var(--cool-gray);
+        }
+
+        header {
+            background-color: var(--cool-blue);
+            color: white;
+            padding: 1em 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li.active {
+            background-color: rgb(24, 100, 162);
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: black;
+        }
+
+        /* nav ul li.active a {
+            color: white;
+        } */
+
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section-title h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-me {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            font-weight: 500;
+            color: #020a2d;
+            max-width: 100%;
+            text-align: justify;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col-lg-4,
+        .col-lg-8 {
+            padding: 15px;
+            box-sizing: border-box;
+            flex: 0 0 100%;
+        }
+
+        @media (min-width: 768px) {
+            .col-lg-4 {
+                flex: 0 0 33.3333%;
+            }
+
+            .col-lg-8 {
+                flex: 0 0 66.6667%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-title h2 {
+                font-size: 1.5em;
+            }
+
+            .content {
+                font-size: 0.9em;
+            }
+
+            nav ul li {
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title h2 {
+                font-size: 1.2em;
+            }
+
+            .content {
+                font-size: 0.8em;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> <span>Home</span></a></li>
+                <li class="active"><a href="about.html"><span>About</span></a></li>
+                <li><a href="education.html"> <span>Education</span></a></li>
+                <li><a href="projects.html"> <span>Projects</span></a></li>
+                <li><a href="skills.html"> <span>Skills</span></a></li>
+                <li><a href="photography.html"> <span>Photography</span></a></li>
+                <li><a href="https://drive.google.com/file/d/1u6hVwZf0PbhSoP_rBkXYZZ1WibVYSzKf/view?usp=sharing/"
+                        target="_blank"><span>Resume</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-me container">
+            <div class="section-title">
+                <h2>About</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <img src="images/intro photo.jpg" class="img-fluid" alt="Sankalp Photo" />
+                </div>
+
+                <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                    <p>
+                        A passionate web developer and photographer. With a strong foundation in front-end and back-end
+                        development, I create dynamic, user-friendly websites that blend functionality with aesthetic
+                        appeal. My expertise in HTML, CSS, JavaScript, and various frameworks allows me to bring
+                        innovative web solutions to life. Alongside my tech skills, I have a deep love for photography,
+                        capturing the world through my lens and finding beauty in everyday moments. This dual passion
+                        for coding and photography enables me to approach projects with a unique, creative perspective,
+                        ensuring that every digital experience I craft is not only technically sound but also visually
+                        captivating.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <strong>City:</strong> <a
+                                        href="https://www.google.com/maps/place/Ajaygarh,+Panna+MP"
+                                        target="_blank">Ajaygarh, Panna MP</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <strong>Email:</strong> <a
+                                        href="mailto:sankalpgupta1108@gmail.com">sankalpgupta1108@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

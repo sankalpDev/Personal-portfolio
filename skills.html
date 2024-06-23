@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            text-align: center;
+        }
+
+        :root {
+            --cool-blue: #081f62;
+            --cool-gray: #fefefe;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--cool-blue);
+            background-color: var(--cool-gray);
+        }
+
+        header {
+            background-color: var(--cool-blue);
+            color: white;
+            padding: 1em 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li.active {
+            background-color: rgb(24, 100, 162);
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section-title h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-item {
+            flex: 0 0 calc(25% - 20px); /* Adjust width of skill item */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .skill-item img {
+            max-width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .skill-item h3 {
+            color: var(--cool-blue);
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .skill-item p {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        /* @media (max-width: 1200px) {
+            .skill-item {
+                flex: 0 0 calc(33.3333% - 20px);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .skill-item {
+                flex: 0 0 calc(50% - 20px);
+            }
+        } */
+
+        @media (max-width: 768px) {
+            .skill-item {
+                flex: 0 0 calc(50% - 20px);
+            }
+
+            nav ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skill-item {
+                flex: 0 0 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                /* align-items: center; */
+            }
+
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> <span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="education.html"> <span>Education</span></a></li>
+                <li><a href="projects.html"> <span>Projects</span></a></li>
+                <li class="active"><a href="skills.html"> <span>Skills</span></a></li>
+                <li><a href="photography.html"> <span>Photography</span></a></li>
+                <li><a href="https://drive.google.com/file/d/1u6hVwZf0PbhSoP_rBkXYZZ1WibVYSzKf/view?usp=sharing/"
+                        target="_blank"><span>Resume</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills</h2>
+            </div>
+
+            <div class="skills">
+                <div class="skill-item">
+                    <img src="images/html-logo.svg" alt="HTML Logo">
+                    <h3>HTML</h3>
+                    <p>HyperText Markup Language</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/css-logo.png" alt="CSS Logo">
+                    <h3>CSS</h3>
+                    <p>Cascading Style Sheets</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/javascript-logo.svg" alt="JavaScript Logo">
+                    <h3>JavaScript</h3>
+                    <p>Programming language of the Web</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/reactjs.png" alt="React Logo">
+                    <h3>React.js</h3>
+                    <p>JavaScript library for building UIs</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/django-logo.svg" alt="Django Logo">
+                    <h3>Django</h3>
+                    <p>Python web framework</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/adobe-photoshop-logo.png" alt="Adobe Photoshop Logo">
+                    <h3>Adobe Photoshop</h3>
+                    <p>Graphic design software</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/adobe-primere-pro-logo.png" alt="Adobe Premiere Pro Logo">
+                    <h3>Adobe Premiere Pro</h3>
+                    <p>Video editing software</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/canva-logo.png" alt="Canva Logo">
+                    <h3>Canva</h3>
+                    <p>Online graphic design tool</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/figma-logo.png" alt="Figma Logo">
+                    <h3>Figma</h3>
+                    <p>Online UI design tool</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
